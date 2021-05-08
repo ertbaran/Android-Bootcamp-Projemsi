@@ -38,6 +38,6 @@ Tam bitmemiş bir Harcama Takip Android uygulaması.
 
 
 Bu linkten uygulamayı indirerek Android cihazınızda deneyebilirsiniz
-.
-https://drive.google.com/file/d/1YuvUgi8pfqbA9SuF21Jz_UYgoNSPze8h/view?usp=sharing
+
+shorturl.at/gDFQ3
 
