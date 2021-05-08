@@ -1,6 +1,6 @@
 # GDC AndroidBootcamp | Bitirme Projemsi
 
-Tümüyle bitemeyen bir proje.
+Tümüyle bitemeyen bir Harcama Takip Android uygulaması.
 
 
 ## Splash Screen
