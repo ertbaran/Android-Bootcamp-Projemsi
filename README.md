@@ -1,6 +1,6 @@
 # GDC AndroidBootcamp | Bitirme Projemsi
 
-Tümüyle bitemeyen bir Harcama Takip Android uygulaması.
+Tam bitmemiş bir Harcama Takip Android uygulaması.
 
 
 ## Karşılama Ekranı
