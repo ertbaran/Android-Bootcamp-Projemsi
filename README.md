@@ -2,14 +2,10 @@
 
 Tümüyle bitemeyen bir proje.
 
-## LOGO
-
-![image](https://user-images.githubusercontent.com/35369764/117553532-e0344800-b05a-11eb-873a-befe0e0d9041.png)
-
 
 ## Splash Screen
 
-![image](https://user-images.githubusercontent.com/35369764/117553345-a9116700-b059-11eb-9707-44f1ec570786.png)
+![image](https://user-images.githubusercontent.com/35369764/117553577-08bc4200-b05b-11eb-98c3-dfb22ae2b064.png)
 
 ## Ana Ekran
 
