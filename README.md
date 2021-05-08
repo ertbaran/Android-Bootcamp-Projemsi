@@ -42,4 +42,4 @@ Aşağıdaki linkten uygulamayı indirerek Android cihazınızda deneyebilirsini
 https://shorturl.at/gDFQ3
 
 
-### Bootcamp'e eğitmen, öğrenci ve ekip olarak dahil olan herkese teşekkürler.
+### Bootcamp'e dahil olan tüm eğitmenlere, öğrencilere ve ekip üyelerine herkese teşekkürler.
