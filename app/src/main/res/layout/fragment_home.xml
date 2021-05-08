@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.list.HomeFragment"
+    android:background="@drawable/gradient_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="148dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_cardview"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textViewMerhaba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cardMerhabaText"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:shadowRadius="1"
+                android:shadowColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-light">
+            </TextView>
+            <TextView
+                android:id="@+id/textViewKullaniciAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="İsminizi Giriniz"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                >
+            </TextView>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_walleticon"
+                android:contentDescription="@string/harcamaicon"
+                android:alpha="0.1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                >
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toplamText"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toplamHarcamaText"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        style="@style/Widget.MaterialComponents.TabLayout.Colored"
+        android:backgroundTint="#7E57C2"
+        android:layout_marginTop="5dp"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRY" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GBP" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintEnd_toEndOf="@id/tabLayout"
+        app:layout_constraintStart_toStartOf="@id/tabLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="165dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHarcama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/recycler_row">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/add_button_description"
+        app:backgroundTint="#667eea"
+        android:textColor="@color/black"
+        android:text="@string/addText"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_add"
+        android:clickable="true"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

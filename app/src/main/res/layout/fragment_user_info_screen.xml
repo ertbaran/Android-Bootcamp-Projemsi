@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".UserInfoScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/kullanici_bilgisi"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutKullaniciAdi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="208dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextKullaniciAdi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:hint="@string/isminizi_giriniz"
+            android:textSize="@dimen/addScreenTextSize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/layoutKullaniciAdi"
+        app:layout_constraintRight_toRightOf="@id/layoutKullaniciAdi"
+        app:layout_constraintTop_toBottomOf="@id/layoutKullaniciAdi">
+
+        <RadioButton
+            android:id="@+id/radioGenderKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kadin"
+            android:textSize="@dimen/addScreenTextSize" />
+
+        <RadioButton
+            android:id="@+id/radioGenderErkek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/erkek"
+            android:textSize="@dimen/addScreenTextSize" />
+
+        <RadioButton
+            android:id="@+id/radioGenderBelirtilmedi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belirtmek_istemiyorum"
+            android:textSize="@dimen/addScreenTextSize" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSaveUserInfo"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/kaydet"
+        android:textColor="@color/black"
+        android:textSize="@dimen/addScreenTextSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonBacktoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_margin="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/addScreenTextSize"
+        android:textColor="#655640"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

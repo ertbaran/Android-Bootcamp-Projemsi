@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Harcama Takip</string>
+
+    <string name="hello_blank_fragment">Harcama Takip Asistanı</string>
+    <string name="splashText">Harcama Takip</string>
+    <string name="firstFragmentText">Hoş Geldiniz !</string>
+    <string name="next">Devam</string>
+    <string name="finish">Başla</string>
+    <string name="homeText">Ana Fragment</string>
+    <string name="second_fragmentText">Harcamalarınız dev gibi olsa da en azından takibi kolay olsun.</string>
+    <string name="third_fragmentText">İlk harcamanızı ekleyerek takibe hemen başlayın...</string>
+    <string name="harcamaicon">Harcama Icon</string>
+    <string name="add_button_description">Ekleme Butonu</string>
+    <string name="addText">EKLE</string>
+    <string name="cardMerhabaText">Merhaba</string>
+    <string name="toplamText">Toplam</string>
+    <string name="toplamHarcamaText">X.XXX,XX TRY</string>
+    <string name="harcama_konu">Harcama İkonu</string>
+    <string name="isminizi_giriniz">İsminizi giriniz</string>
+    <string name="backButtonText"><![CDATA[<]]></string>
+    <string name="kaydet">Kaydet</string>
+    <string name="back"><![CDATA[<Geri]]></string>
+    <string name="belirtmek_istemiyorum">Belirtmek istemiyorum</string>
+    <string name="erkek">Erkek</string>
+    <string name="kadin">Kadın</string>
+    <string name="kullanici_bilgisi">Kullanıcı Bilgisi</string>
+</resources>

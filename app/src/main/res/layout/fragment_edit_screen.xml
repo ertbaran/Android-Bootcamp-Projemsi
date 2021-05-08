@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.edit.EditScreen">
+
+    <TextView
+        android:id="@+id/textViewHarcamaUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Harcamayı Güncelle"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutHarcamaAdiUpdate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHarcamaUpdate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextHarcamaAdiUpdate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Yeni Ad"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/addScreenTextSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutHarcamaMiktari"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutHarcamaAdiUpdate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextHarcamaFiyatiUpdate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Yeni Fiyat"
+            android:inputType="number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/addScreenTextSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/textViewKur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/imageViewHarcamaUpdate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutHarcamaAdiUpdate"
+        android:layout_marginTop="40dp"
+        android:text="₺"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/buttonHarcamaDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="@color/orange"
+        android:text="Sil"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/addScreenTextSize" />
+    <Button
+        android:id="@+id/buttonHarcamaUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="Güncelle"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/buttonHarcamaDelete"
+        app:layout_constraintLeft_toRightOf="@id/buttonHarcamaDelete"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/addScreenTextSize" />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewHarcamaUpdate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_walleticon"
+        android:id="@+id/imageViewHarcamaUpdate"
+        android:contentDescription="@string/harcama_konu" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonBacktoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_margin="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/addScreenTextSize"
+        android:textColor="#655640"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
