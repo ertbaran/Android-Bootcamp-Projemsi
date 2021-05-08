@@ -1,4 +1,4 @@
-# AndroidBootcamp Projemsi
+# GDC AndroidBootcamp | Bitirme Projemsi
 
 Tümüyle bitemeyen bir proje.
 
