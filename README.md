@@ -2,6 +2,11 @@
 
 Tümüyle bitemeyen bir proje.
 
+## LOGO
+
+![image](https://user-images.githubusercontent.com/35369764/117553532-e0344800-b05a-11eb-873a-befe0e0d9041.png)
+
+
 ## Splash Screen
 
 ![image](https://user-images.githubusercontent.com/35369764/117553345-a9116700-b059-11eb-9707-44f1ec570786.png)
@@ -17,3 +22,5 @@ Tümüyle bitemeyen bir proje.
 ## Harcama Ekleme Ekranı
 
 ![image](https://user-images.githubusercontent.com/35369764/117553433-52f0f380-b05a-11eb-8df5-5c2a636a08ce.png)
+
+
