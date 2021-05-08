@@ -39,5 +39,5 @@ Tam bitmemiş bir Harcama Takip Android uygulaması.
 
 Bu linkten uygulamayı indirerek Android cihazınızda deneyebilirsiniz
 
-shorturl.at/gDFQ3
+https://shorturl.at/gDFQ3
 
