@@ -19,4 +19,9 @@ Tümüyle bitemeyen bir proje.
 
 ![image](https://user-images.githubusercontent.com/35369764/117553615-491bc000-b05b-11eb-81d3-ad8e608b1d88.png)
 
+## Harcama Güncelleme Ekranı
+
+![image](https://user-images.githubusercontent.com/35369764/117553638-62bd0780-b05b-11eb-8eea-6893664eea32.png)
+
+
 
