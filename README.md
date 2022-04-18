@@ -39,7 +39,7 @@ Tam bitmemiş bir Harcama Takip Android uygulaması.
 
 Aşağıdaki linkten uygulamayı indirerek Android cihazınızda deneyebilirsiniz.
 
-https://shorturl.at/gDFQ3
+https://drive.google.com/file/d/1YuvUgi8pfqbA9SuF21Jz_UYgoNSPze8h/view?usp=sharing
 
 
 ### Bootcamp'e dahil olan tüm eğitmenlere, öğrencilere ve ekip üyelerine teşekkürler.
